@@ -145,6 +145,10 @@ function lastCheck() {
         document.regform.url.value = "";
         document.regform.number.value = "";
         document.regform.date.value = "";
+        var password = document.getElementsByClassName("password-check");
+        for(var i=0; i<5; i++) {
+            password[i].style.color = "grey";
+        }
     }
     else {
         alert("Error");
