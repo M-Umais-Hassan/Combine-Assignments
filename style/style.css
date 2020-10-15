@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  text-align: center;
+}
+
+.btn-primary {
+  margin-left: 15px;
+  padding: 5px 20px;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+footer {
+  background: #3a3939;
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.btn-primary {
+  margin-left: 15px;
+  padding: 5px 20px;
+}
+
+#msg {
+  color: grey;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: -40px;
+  font-size: 15px;
+}
+
+span {
+  color: red;
+}

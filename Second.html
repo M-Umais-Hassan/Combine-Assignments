@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <title>Second lab task</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-primary bg-light">
+        <a class="navbar-brand" href="First.html">SP18-BCS-179</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="First.html">Task 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Second.html">Task 2<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="alert alert-info" role="alert">
+            <h5>Muhammad Umais Hassan - SP18-BCS-179</h5>
+        </div>
+        <h2 class="text-primary">Form Validation - Lab Task 2</h2><br><hr>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 box">
+                <h1 class="text-info text-center">Registration Form</h1><br><br>
+                <form action="" name="regform" onsubmit="return false">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" onfocusout="checkName()" class="form-control" required>
+                        <span id="name_error_msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age" onfocusout="checkAge()" class="form-control" required>
+                        <span id="age_error_msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" onkeyup="checkPass(this.value)" class="form-control" required>
+                        <span id="pass_error_msg"></span>
+                        <div id="msg" class="shadow-lg p-3 mb-5 bg-white rounded">    
+                            <label class="password-check"><strong> 8 character </strong></label><br>
+                            <label class="password-check"><strong> 1 Uppercase </strong></label><br>
+                            <label class="password-check"><strong> 1 Lowercase </strong></label><br>
+                            <label class="password-check"><strong> 1 Numeric </strong></label><br>
+                            <label class="password-check"><strong> 1 special character </strong></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="abc@gmail.com" class="form-control" onkeyup="checkEmail()" name="email" id="email" required>
+                        <span id="email_error_msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Number:</label>
+                        <input type="text"  name="number" id="number" value="923" onfocusout="checkNum()" class="form-control"required>
+                        <span id="number_error_msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="url">Blog URL:</label>
+                        <input type="text" name="url" id="url" class="form-control" onfocusout="checkURL()">
+                        <span class="error_form" id="url_error_msg"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date of birth:</label>
+                        <input type="date" name="date" id="date" class="form-control" required>
+                        <span class="error_form" id="dob_error_msg"></span>
+                    </div>
+                    <button name="submit" onclick="lastCheck()" style="float:right;margin-top: 20px;margin-bottom: 10px;" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <footer>
+        <h6>Copyright - Muhammad Umais Hassan</h6>
+    </footer>
+
+    <script src="js/second.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
